@@ -42,10 +42,10 @@ class Student
   end
 
   def self.create(name:, grade:)
-    student = Student.new(name, grade)
-    student.save
-    student
-  end
+   student = Student.new(name, grade)
+   student.save
+   student
+ end
 
   def self.find_by_name(name)
     sql = "SELECT * FROM students WHERE name = ? "
